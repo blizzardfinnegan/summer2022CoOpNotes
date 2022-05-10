@@ -10,7 +10,10 @@ Generally log in with `bfdst`, the admin account should be used sparingly.
 
 General job tasks:
 
-1. Image computers
-2. Make sure that they have the correct permissions in Active Directory
+- Image computers
+- Make sure that they have the correct permissions in Active Directory
   - Active Directory and SCCM are managed through RDP to `clientmgmt`
-3. Check slack/email
+  - Software is installed locally with Software Center or the Mac equivalent
+- Check slack/email
+- Remote assist staff, when necessary using Bomgar/BeyondTrust
+- 
