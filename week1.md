@@ -16,4 +16,4 @@ General job tasks:
   - Software is installed locally with Software Center or the Mac equivalent
 - Check slack/email
 - Remote assist staff, when necessary using Bomgar/BeyondTrust
-- 
+- Generally, be an IT person
