@@ -13,7 +13,7 @@ General job tasks:
 - Image computers
 - Make sure that they have the correct permissions in Active Directory
   - Active Directory and SCCM are managed through RDP to `clientmgmt`
-  - Software is installed locally with Software Center or the Mac equivalent
+  - Software is installed locally with Software Center (Win10/11) or Managed Software Center (Mac)
 - Check slack/email
 - Remote assist staff, when necessary using Bomgar/BeyondTrust
 - Generally, be an IT person
