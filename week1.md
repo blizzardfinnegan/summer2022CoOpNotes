@@ -1,5 +1,7 @@
 OU = Organizational Unit
 
+MDM = Mobile Device Management (Apple classroom?)
+
 Emails are through outlook, not Gmail
 
 Main landing page is at `help.rit.edu/navpage.do`. There's a link there for accidental missed punch-ins
