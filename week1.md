@@ -25,6 +25,7 @@ General job tasks:
   - When prompted enter ||`letmein`|| as password
   - choose default option, hit enter
   - remote in to `clientmgmt`, create an object for the computer. Just name it the same as the hostname. Put the object in the right folder
+  - If reimaging, delete the old SCCM object
   - wait until next day; check that all programs have installed properly in Software Center
   - Reboot machine
 - Make sure that they have the correct permissions in Active Directory
