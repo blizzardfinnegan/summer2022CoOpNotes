@@ -34,3 +34,9 @@ General job tasks:
 - Check slack/email
 - Remote assist staff, when necessary using Bomgar/BeyondTrust
 - Generally, be an IT person
+
+
+Tasks done:
+- Install new CoLA lab; physically install, image, check installed programs
+- Image new workstation for Color Science; also installed Ubuntu 22.04
+  - had minor problem installing Ubuntu; Nvidia drivers weren't working properly at first. Update from 20.04 to 22.04 fixed problem
