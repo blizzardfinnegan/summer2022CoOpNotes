@@ -1,4 +1,4 @@
-These instructions are specifically for Dell devices. Non-Dell devices will have different information in different locations, but will have mostly a similar process. Apple computers are their own process not covered in this document.
+These instructions are specifically for Dell devices. Non-Dell devices will have different information in different locations, but will have mostly a similar process. The process can be followed for re-imaging, as well as imaging. Apple computers are their own process not covered in this document.
 
 1. Boot the device. Immediately after booting, go to the BIOS by pressing F2 repeatedly as soon as you presss the power button, until the screen turns on, and changes to an interface.
 2. On the initial page, write down the Service Tag or Serial number of the device. Scroll down to find the Ethernet MAC address (often labeled "LOM MAC Address"). These are used in later steps. 
@@ -26,3 +26,7 @@ These instructions are specifically for Dell devices. Non-Dell devices will have
 11. Reboot the new device, this time pressing F12 repeatedly until it allows you to select boot options. Choose the `Integrated NIC (IPv4)` option. Watch the device, and when it prompts you to press enter, do so. The device will start downloading an image to boot from.
 12. Once the downloaded image is loaded, enter `letmein` in the password field. Click next until the imaging process starts. This will take a while (an hour is reasonable). During this process, the device cannot lose power, or Ethernet connection. You can tell that the device is done when a message shows up in Slack in the `#sccm-ts-alerts` channel. 
 13. Once the image is complete, log in once to ensure that it was set up properly. Then, leave the device powered on and plugged in overnight. It is recommended, but not required, that you log out of the device first. This will run any necessary updates in the background overnight.
+
+# Troubleshooting
+
+If a computer that has previously been imaged is now not imaging properly, there could be a conflicting SCCM object. Delete this object, then try again to re-image.
