@@ -14,7 +14,7 @@ Received computers:
 
 In total, received 15/17 computers.
 
-6x Dells properly imaged:
+Dells properly imaged:
 - 1x 5480
 - 7x 5401s
 - 1x 5411
