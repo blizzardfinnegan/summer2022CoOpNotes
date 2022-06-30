@@ -16,3 +16,9 @@ To reimage an old Mac:
 hdiutil mount http://macbootstrap.rit.edu/mds
 /Volumes/mds/run
 ```
+
+
+To migrate data between Macs, you can go the easy route of using a thumb drive, or you can use the Apple Official solution, called "Migration Assistant". 
+1. Make sure that both Macs are turned on, and connected to the interet. 
+2. On both computers, press `Command + Space`, opening Spotlight search. From there, search for "Migration Assistant".
+3. Once there, follow the prompts, with the appropriate sides. 
