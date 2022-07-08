@@ -1,0 +1,15 @@
+New comments      - If the subject contains "Commented", "work notes added", or "comments added",           tag it as a comment
+New tasks         - If the subject contains "a request task" and "assigned to",                             tag as ticket
+New incidents     - If the subject contains "assigned to" and "Incident",                                   tag as ticket
+Poster Printing   - If the body    contains "Poster Printing",                                              tag as COS and mark as read
+COS catch         - If the body    contains "College of Science",                                           tag as COS and mark as read
+COE catch         - If the body    contains "College of Engineering",                                       tag as COE and mark as read
+CHST catch        - If the body    contains "College of Health Sciences and Technology"                     tag as CHST and mark as read
+COS subject catch - If the subject contains "College of S"                                                  tag as COS and mark as read
+COE subject catch - If the subject contains "College of E"                                                  tag as COE and mark as read
+CHST subjectcatch - If the subject contains "College of H"                                                  tag as CHST and mark as read
+Aging comments    - If an email    is older than 01 day,  and is tagged as a comment,                       move to "New Comments"
+Aging tickets     - If an email    is older than 05 days, and is tagged as ticket,                          move to "New Tickets"
+Old mail          - If an email    is older than 28 days, and isn't a comment, ticket, or starred,          Move to "Old Mail"
+Old comments      - If an email    is older than 14 days, and is a comment that isn't starred,              Move to "Old Comments"
+Old tickets       - If an email    is older than 14 days, and is a ticket that isn't starred,               Move to "Old Tickets" 
