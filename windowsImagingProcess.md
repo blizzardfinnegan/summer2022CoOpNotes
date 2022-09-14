@@ -1,4 +1,4 @@
-These instructions are specifically for Dell devices. Non-Dell devices will have different information in different locations, but will have mostly a similar process. The process can be followed for re-imaging, as well as imaging. Apple computers are their own process not covered in this document.
+# Latitude and Optiplex Devices
 
 1. Boot the device. Immediately after booting, go to the BIOS by pressing F2 repeatedly as soon as you presss the power button, until the screen turns on, and changes to an interface.
 2. On the initial page, write down the Service Tag or Serial number of the device. Scroll down to find the Ethernet MAC address (often labeled "LOM MAC Address"). These are used in later steps. 
@@ -26,6 +26,15 @@ These instructions are specifically for Dell devices. Non-Dell devices will have
 11. Reboot the new device, this time pressing F12 repeatedly until it allows you to select boot options. Choose the `Integrated NIC (IPv4)` option. Watch the device, and when it prompts you to press enter, do so. The device will start downloading an image to boot from.
 12. Once the downloaded image is loaded, enter `letmein` in the password field. Click next until the imaging process starts. This will take a while (an hour is reasonable). During this process, the device cannot lose power, or Ethernet connection. You can tell that the device is done when a message shows up in Slack in the `#sccm-ts-alerts` channel. 
 13. Once the image is complete, log in once to ensure that it was set up properly. Then, leave the device powered on and plugged in overnight. It is recommended, but not required, that you log out of the device first. This will run any necessary updates in the background overnight.
+
+# All Other Devices
+
+Steps 1-10 listed above should be followed. Afterwards:
+
+1. Install Windows 10 Enterprise on the computer. Do not install with a Windows key, as binding to the network will provide it with a key. The computer will reboot from the Windows 10 installer to its first boot procedure. Ensure that the computer is not connected to the network via ethernet, then, when prompted for internet access, tell it you do not have internet access (blue text most likely in the bottom left corner of the screen). Confirm you would like to install with "limited" setup, and install using a temporary local account. Specific details of this account are not important, as it won't last long on the device.
+2. Once you are logged in, open Settings, navigate to System, then the section labeled "About". On the right side of the window should be a list of hyperlinks, including one labeled "Rename this PC (advanced)". This will open a "System Properties" window, click on the button with the label "To rename this computer or change its domain or workgroup, click Change." Go through the prompts, using your admin account, the computer's hostname, and `MAIN.AD.RIT.EDU` for the domain. Reboot the computer.
+3. Log in with your admin account. Open File Explorer, click on the address bar, and type in `\\main.ad.rit.edu\shares\FA\ITS_SCCMClient\latest` and run the `ccmsetup` application. This will install Software Center, and will take some time. Note that this runs in the background, and can only be observed through Task Manager. Once this is complete, reboot again.
+4. Log back in with your admin account, and open Software Center from the Start menu. If you do not get an orange banner at the top of the window, or you get prompted for a Windows or Microsoft account, close the application and run `C:\Windows\CCM\ccmrepair.exe` from an admin command prompt. Once all of this is complete, log out, and log in with your standard account. If this works properly, the setup process is complete, and you can transition the user to their device.
 
 # Troubleshooting
 
