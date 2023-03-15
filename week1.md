@@ -22,7 +22,7 @@ General job tasks:
   - reboot, mash F12 to open boot-order menu
   - boot to IPv4 network device
   - Hit enter on prompt
-  - When prompted enter ||`letmein`|| as password
+  - When prompted enter `letmein` as password
   - choose default option, hit enter
   - remote in to `clientmgmt`, create an object for the computer. Just name it the same as the hostname. Put the object in the right folder
   - If reimaging, delete the old SCCM object
